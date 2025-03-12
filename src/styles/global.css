@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+
+body {
+  @apply bg-secondary text-gray-800 font-sans;
+}
+
+h1, h2, h3 {
+  @apply text-primary font-bold;
+}
+
+p {
+  @apply text-gray-700;
+}
+
+a {
+  @apply text-accent hover:underline;
+}
+
+nav ul {
+  @apply flex space-x-4 bg-primary p-4 text-white;
+}
+
+nav ul li {
+  @apply text-lg;
+}
+
+/* Blog Post Styling */
+.blog-post {
+  @apply max-w-2xl mx-auto bg-white p-6 shadow-md rounded-lg;
+}
+
+.blog-post h1 {
+  @apply text-3xl mb-4;
+}
+
+.blog-post p {
+  @apply mb-4 leading-relaxed;
+}
+
+.blog-post .categories, .blog-post .tags {
+  @apply flex space-x-2 text-sm text-accent;
+}
